@@ -2,10 +2,31 @@
   "name": "test-assignments",
   "version": "1.0.0",
   "description": "My solutions for test assignments from different companies.",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "babel-node": "babel-node",
+    "eslint": "eslint",
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+   "type": "git",
+   "url": "git+https://github.com/joisadler/test-assignments.git"
+ },
+  "author": "Yossi Adler <joisadler@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joisadler/test-assignments/issues"
+  },
+  "homepage": "https://github.com/joisadler/algorithms-and-data-structures#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "jest": "^20.0.4"
+  },
 }
