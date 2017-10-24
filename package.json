@@ -1,0 +1,11 @@
+{
+  "name": "test-assignments",
+  "version": "1.0.0",
+  "description": "My solutions for test assignments from different companies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
