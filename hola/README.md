@@ -27,36 +27,6 @@ verify("(  [  <>  ()  ]  <>  )") -> 1
 verify("   (      [)") -> 0
 ```
 
-```
-const verify = (text) {
-  If (text === ‘’) {
-    return 1;
-  }
-  const states = {
-    0: ‘before all’’,
-    1: ‘inside of ()’,
-    2: ‘inside of [],
-    3: ‘inside of <>’,’
-    4: ‘after all’,
-  }
-
-  let state = states[0];
-  for (let i = 0; i < string.length; i +=1) {
-  const current = str[i];
-  switch (state)
-    case states[0]:
-     If (current === ‘(‘) {
-       state = states[1];
-     }
-      If (current === ‘)’ && str.slice().split(‘’)) {
-
-       state = states[4];
-      }
-  }
-};
-```
-
-
 (2)
 
 Problem
