@@ -2,26 +2,9 @@ const verify = (str) => {
   if (str === '') {
     return 1;
   }
-
   const brackets = str.match(/[[\]()<>]/g);
   const stack = [];
-
-  const typeOf = (bracket) => {
-    switch (bracket) {
-      case '(':
-        return 'round';
-      case ')':
-        return 'round';
-      case '[':
-        return 'square';
-      case ']':
-        return 'square';
-      case '<':
-        return 'angle';
-      default:
-        return 'angle';
-    }
-  };
+  const pairOf = { ')': '(', ']': '[', '>': '<' };
 
   for (let i = 0; i < brackets.length; i += 1) {
     const currentBracket = brackets[i];
@@ -30,7 +13,7 @@ const verify = (str) => {
 
     if (currentBracketIsOpening) {
       stack.push(currentBracket);
-    } else if (typeOf(currentBracket) === typeOf(stackHead)) {
+    } else if (pairOf[currentBracket] === stackHead) {
       stack.pop();
     }
   }
