@@ -8,7 +8,7 @@ const verify = (str) => {
 
   for (let i = 0; i < brackets.length; i += 1) {
     const currentBracket = brackets[i];
-    const currentBracketIsOpening = ['[', '(', '<'].indexOf(currentBracket) !== -1;
+    const currentBracketIsOpening = ['[', '(', '<'].includes(currentBracket);
     const stackHead = stack[stack.length - 1];
 
     if (currentBracketIsOpening) {
